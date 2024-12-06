@@ -1,0 +1,147 @@
+.container-form {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.header-form h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--preto-100);
+}
+
+.header-form p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--preto-100);
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.form_campo-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--Preto-branco);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.form_campo-label {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--preto-50);
+}
+
+.form_campo-info input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--preto-100);
+}
+
+
+.form_campo-info input::placeholder {
+    color: var(--preto-50);
+}
+
+.form_campo-info textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 93px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--preto-100);
+    font-family: inherit;
+}
+
+
+.form_campo-info textarea::placeholder {
+    color: var(--preto-50);
+    font-family: "Raleway", sans-serif;
+    ;
+}
+
+
+.form_campo-submit button {
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: var(--azul-100);
+    color: var(--Preto-branco);
+    border: none;
+}
+
+.form_campo-submit button:hover {
+    background-color: #0B69E3;
+}
+
+.label-ativo {
+    color: var(--azul-100);
+}
+
+.label-erro {
+    color: rgba(255, 0, 0);
+}
+
+.form_campo-info-ativo {
+    border-bottom: 2px solid var(--azul-100);
+}
+
+.form_campo-info-erro {
+    border-bottom: 2px solid rgba(255, 0, 0);
+}
+
+.mensagem_erro-campoVazio {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: rgba(255, 0, 0);
+    display: none;
+}
+
+.mensagem-enviada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    color: var(--preto-100);
+    border-radius: 8px;
+    display: none;
+    text-align: center;
+    line-height: auto;
+    animation: fadeIn 1s forwards;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+

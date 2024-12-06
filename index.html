@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portifólio</title>
+	<link rel="icon" href="./assets/icone-brilho.svg">
+	<link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="stylesheet" href="./styles/form-contato.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header id="header">
+		<nav class="navigation container">
+			<ul class="navigation-logo">
+				<img src="./assets/icone-brilho.svg" alt="">
+				<span>Washington Silva</span>
+			</ul>
+			<ul class="navigation-links">
+				<li>
+					<a href="#section-sobre-mim">Sobre</a>
+				</li>
+				<li>
+					<a href="#section-skills">Skills</a>
+				</li>
+				<li>
+					<a href="#section-formacao">Formação</a>
+				</li>
+				<li>
+					<a href="#section-experiencia">Projetos</a>
+				</li>
+				<li>
+					<address>
+						<a href="#section-contato">contato.wslm@gmail.com</a>
+					</address>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<a href="#header" class="scroll-to-top">↑ Voltar ao topo</a>
+	<!-- SCRIPT < VOLTAR AO TOPO -->
+	<script>
+		const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+		function toggleScrollToTopButton() {
+			if (window.scrollY > 300) {
+				scrollToTopBtn.style.display = 'block';
+			} else {
+				scrollToTopBtn.style.display = 'none';
+			}
+		}
+		document.addEventListener('DOMContentLoaded', toggleScrollToTopButton);
+		window.addEventListener('scroll', toggleScrollToTopButton);
+	</script>
+	<!--  FIM SCRIPT < VOLTAR AO TOPO -->
+	<main>
+		<section class="hero_section">
+			<div class="hero_section container">
+				<div class="hero_section-conteudo">
+					<img class="img-hero-section-programador" src="./assets/imagem-programador.png"
+						alt="Washington, está trabalhando em seu computador. Ele está sorrindo e parece feliz">
+					<div class="hero_section-info-links">
+						<h1 class="titulo-sections">Olá, meu nome é Washington Silva e construo páginas web</h1>
+						<p>Sou um jovem apaixonado pela tecnologia, e atualmente estou participando do projeto
+							Oracle ONE na Alura.</p>
+						<div class="hero_section-links">
+							<div class="hero_section-links-link">
+								<a href="https://github.com/Devwashingt0n" target="_blank">Github</a>
+								<img class="setaLink-img" src="./assets/seta-links-social-media.svg" alt="">
+							</div>
+							<div class="hero_section-links-link">
+								<a href="https://www.linkedin.com/in/wslm" target="_blank">Linkedin</a>
+								<img class="setaLink-img" src="./assets/seta-links-social-media.svg" alt="">
+							</div>
+							<div class="hero_section-links-link">
+								<a href="https://www.instagram.com/washington.slm" target="_blank">Instagram</a>
+								<img class="setaLink-img" src="./assets/seta-links-social-media.svg" alt="">
+							</div>
+							<div class="hero_section-links-link">
+								<a href="./erro.pagina.html">Currículo</a>
+								<img class="setaLink-img" src="./assets/seta-links-social-media.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		</section>
+		<section class="sobre_section" id="section-sobre-mim">
+			<div class="sobre_section container">
+				<div class="sobre_section-conteudo">
+					<h2 class="titulo-sections">Sobre Mim</h2>
+					<p>Oi, sou <strong>Washington!</strong> Estou começando minha jornada na programação e, para ser
+						sincero, estou me
+						divertindo muito. Entrei no Oracle One para aprender o básico de <strong>HTML, CSS e
+							JavaScript,</strong> e, apesar de ainda não me sentir 100% confiante, já percebo o quanto
+						evoluí desde que comecei.</p>
+
+					<p>O mundo da programação é desafiador, sem dúvida, mas é esse desafio que me atrai. Resolver
+						problemas, quebrar a cabeça com o código e, no final, ver o que criei funcionando – não tem
+						sensação melhor.</p>
+
+					<p>Atualmente, ainda não me aprofundei em frameworks como o React, mas já estou ansioso para dar
+						esse próximo passo. E o melhor: sei que cada código escrito é uma conquista, mesmo que pequena.
+					</p>
+
+					<p>Esse site é um exemplo do que já consegui fazer até agora.</p>
+
+					<img class="img-assinatura" src="./assets/assinatura-dev.png" alt="">
+				</div>
+			</div>
+		</section>
+		<section class="skills_section" id="section-skills">
+			<div class="skills_section container">
+				<div class="skills_section-conteudo">
+					<h2 class="titulo-sections">Skills</h2>
+					<div class="container-cards-skills">
+						<div class="card-skills">
+							<img src="./assets/html-icon.svg" alt="">
+							<h3>HTML5 - </h3>
+							<h5> Em Aprendizado</h5>
+						</div>
+						<div class="card-skills">
+							<img src="./assets/JavaScript-icon.svg" alt="">
+							<h3>JavaScript -</h3>
+							<h5>Em Aprendizado</h5>
+						</div>
+						<div class="card-skills">
+							<img src="./assets/CSS-icon.svg" alt="">
+							<h3>CSS</h3>
+							<h5>Em Aprendizado</h5>
+						</div>
+						<div class="card-skills">
+							<img src="./assets/React-icon.svg" alt="">
+							<h3>REACT -</h3>
+							<h5>Em breve</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="formacao_section" id="section-formacao">
+			<div class="formacao_section container">
+				<div class="formação_section-conteudo">
+					<h2 class="titulo-sections">Formação acadêmica</h2>
+					<div class="container-cards-formacao">
+						<div class="card_info curso-x">
+							<div class="card-formacao card_curso-x">
+								<img src="./assets/logo-alura.svg" alt="">
+							</div>
+							<h3>Lógica de Programação <br>com JavaScript.</h3>
+							<h5>2024 - Alura</h5>
+						</div>
+						<div class="card_info curso-x">
+							<div class="card-formacao card_curso-x">
+								<img src="./assets/logo-alura.svg" alt="">
+							</div>
+							<h3>Estrutura visual de um site <br>com HTML.</h3>
+							<h5>2024 - Alura</h5>
+						</div>
+						<div class="card_info curso-x">
+							<div class="card-formacao card_curso-x">
+								<img src="./assets/logo-alura.svg" alt="">
+							</div>
+							<h3>Estilização de páginas web <br>com CSS.</h3>
+							<h5>2024 - Alura</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="experiencia_section" id="section-experiencia">
+			<div class="experiencia_section container">
+				<div class="experiencia_section-conteudo">
+					<h2 class="titulo-sections">Experiência profissional</h2>
+					<div class="demo_projeto projeto-decodificador">
+						<img src="./assets/imagem-projeto-decodificador.png" alt="">
+						<div class="experiencia_section-infos">
+							<h3>Decodificador de texto</h3>
+							<h5>Challenge Alura
+								Codificador</h5>
+							<div class="experiencia_section-botoesLink">
+								<a class="link-repositorio" href="https://github.com/Dodo3003/Codificador-de-Texto" target="_blank">Repositório</a>
+								<a class="link-deploy" href="https://codificadoralura-git-main-washingtonsilva-wslms-projects.vercel.app/" target="_blank">Ver demo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="contato_section" id="section-contato">
+			<div class="contato_section container">
+				<div class="contato_section-conteudo">
+					<img class="img-contato" src="./assets/imagem-secao-contato.png" alt="">
+					<div class="container-form">
+						<div class="header-form">
+							<h3 class="">Contato</h3>
+							<p>Quer entrar em contato comigo? <br>
+								Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+						</div>
+						<form action="" method="post" class="form-contato">
+							<div class="form_campo-info form">
+								<label for="form-name" class="form_campo-label">Nome</label>
+								<input type="text" class="input_form-contato" id="form-name"
+									placeholder="Digite seu nome" name="usuario_nome" />
+								<span class="mensagem_erro-campoVazio" href="">*Este campo é obrigatório!</span>
+							</div>
+							<div class="form_campo-info">
+								<label for="form-email" class="form_campo-label">E-mail:</label \>
+								<input type="email" class="input_form-contato" id="form-email"
+									placeholder="Digite seu e-mail" name="usuario_email" />
+								<span class="mensagem_erro-campoVazio" href="">*Este campo é obrigatório!</span>
+							</div>
+							<div class="form_campo-info">
+								<label for="form-assunto" class="form_campo-label">Assunto</label>
+								<input type="text" class="input_form-contato" id="form-assunto" placeholder="Assunto"
+									name="usuario_assunto" />
+								<span class="mensagem_erro-campoVazio" href="">*Este campo é obrigatório!</span>
+							</div>
+							<div class="form_campo-info form_campo-info-mensagem">
+								<label for="form-mensagem"
+									class="form_campo-label form_campo-label-mensagem">Mensagem</label>
+								<textarea name="" class="textarea_form-contato" id="form-mensagem"
+									placeholder="Digite sua mensagem" name="usuario_mensagem"></textarea>
+							</div>
+							<div class="form_campo-submit">
+								<button type="submit">Enviar Mensagem</button>
+							</div>
+						</form>
+						<div class="mensagem-enviada">
+							<div>
+								<h2>SUCESSO!</h2>
+								<span>Sua mensagem foi enviada. <br>Entraremos em contato assim que possível.</span>
+							</div>
+
+
+						</div>
+					</div>
+		</section>
+		<footer class="footer">
+			<div class="footer container">
+				<div class="footer-conteudo">
+					<h3>Desenvolvido por Washington Silva <br> UX Design By Alura</h3>
+				</div>
+			</div>
+		</footer>
+	</main>
+</body>
+<script src="./script-formulario.js"></script>
+
+</html>
